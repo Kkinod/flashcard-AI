@@ -1,47 +1,74 @@
-# 10x Astro Starter
+# Educational Flashcards
 
-A modern, opinionated starter template for building fast, accessible, and AI-friendly web applications.
+## 1. Project Name
 
-## Tech Stack
+Educational Flashcards
+
+## 2. Project Description
+
+Educational Flashcards is a web-based application that allows users to create, manage, and review flashcards for effective learning using spaced repetition. The app provides two main approaches for flashcard creation:
+
+- **AI-Driven Flashcard Generation:** Automatically generates flashcards from provided text, enforcing character limits (front: max 200 characters, back: max 500 characters) and including metadata such as creation date and user details.
+- **Manual Flashcard Creation:** Offers a simple form for users to manually create flashcards with built-in validation.
+
+Users can review generated flashcard candidates by accepting, editing, or rejecting them (individually or in bulk). The application also features secure user account management, including registration, login, password updates, and account deletion. Integration with an open-source spaced repetition algorithm further enhances the learning process.
+
+## 3. Tech Stack
+
+**Frontend:**
 
 - [Astro](https://astro.build/) v5.5.5 - Modern web framework for building fast, content-focused websites
 - [React](https://react.dev/) v19.0.0 - UI library for building interactive components
 - [TypeScript](https://www.typescriptlang.org/) v5 - Type-safe JavaScript
 - [Tailwind CSS](https://tailwindcss.com/) v4.0.17 - Utility-first CSS framework
+- [Shadcn/ui](https://ui.shadcn.com/) - for accessible React components
 
-## Prerequisites
+**Backend:**
 
-- Node.js v22.14.0 (as specified in `.nvmrc`)
-- npm (comes with Node.js)
+- Supabase: Provides a PostgreSQL database, authentication, and backend-as-a-service
 
-## Getting Started
+**AI Integration:**
+
+- Openrouter.ai: Access to multiple AI models (e.g., OpenAI, Anthropic, Google) for flashcard generation
+
+**CI/CD & Hosting:**
+
+- GitHub Actions for continuous integration and deployment
+- DigitalOcean for hosting via Docker images
+
+**Other:**
+
+- Conventional Commits for version control
+
+## 4. Getting Started Locally
+
+### Prerequisites
+
+- Node.js version specified in `.nvmrc`: **22.14.0**
+- A package manager: pnpm (recommended) or npm
+
+### Installation Steps
 
 1. Clone the repository:
+   ```bash
+   git clone https://github.com/Kkinod/flashcard-AI.git
 
-```bash
-git clone https://github.com/przeprogramowani/10x-astro-starter.git
-cd 10x-astro-starter
-```
+   ```
+2. Navigate to the project directory:
+   ```bash
+    cd 10xDevs-Fiszki
+   ```
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
+4. Start the development server:
+   ```bash
+   npm run dev
+   ```
+5. Open [http://localhost:3000](http://localhost:3000) in your browser to view the app.
 
-2. Install dependencies:
-
-```bash
-npm install
-```
-
-3. Run the development server:
-
-```bash
-npm run dev
-```
-
-4. Build for production:
-
-```bash
-npm run build
-```
-
-## Available Scripts
+## 5. Available Scripts
 
 - `npm run dev` - Start development server
 - `npm run build` - Build for production
@@ -49,7 +76,7 @@ npm run build
 - `npm run lint` - Run ESLint
 - `npm run lint:fix` - Fix ESLint issues
 
-## Project Structure
+## 6. Project Structure
 
 ```md
 .
@@ -62,33 +89,14 @@ npm run build
 ├── public/         # Public assets
 ```
 
-## AI Development Support
+## 7. Project Status
 
-This project is configured with AI development tools to enhance the development experience, providing guidelines for:
+The project is currently in its Minimum Viable Product (MVP) stage, focusing on a web-based solution. Future iterations may include additional features and a mobile version.
 
-- Project structure
-- Coding practices
-- Frontend development
-- Styling with Tailwind
-- Accessibility best practices
-- Astro and React guidelines
-
-### Cursor IDE
+## 8. Cursor IDE
 
 The project includes AI rules in `.cursor/rules/` directory that help Cursor IDE understand the project structure and provide better code suggestions.
 
-### GitHub Copilot
+## 9. License
 
-AI instructions for GitHub Copilot are available in `.github/copilot-instructions.md`
-
-### Windsurf
-
-The `.windsurfrules` file contains AI configuration for Windsurf.
-
-## Contributing
-
-Please follow the AI guidelines and coding practices defined in the AI configuration files when contributing to this project.
-
-## License
-
-MIT
+This project is licensed under the MIT License.
