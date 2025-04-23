@@ -22,3 +22,7 @@ CI/CD i Hosting:
 
 - GitHub Actions do tworzenia pipeline'ów CI/CD
 - DigitalOcean do hostowania aplikacji za pośrednictwem obrazu docker
+
+Github - commit messages:
+
+- korzystamy z Conventional Commits: https://www.conventionalcommits.org/en/v1.0.0/
